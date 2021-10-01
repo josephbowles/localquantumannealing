@@ -13,7 +13,7 @@ class Lqa_basic():
     """
     def __init__(self, couplings):
         super(Lqa_basic, self).__init__()
-        self.couplings = torch.tensor(couplings, dtype=torch.float32)
+        self.couplings = couplings
         self.n = couplings.shape[0]
         self.energy = 0.
         self.config = torch.zeros([self.n, 1])
@@ -61,7 +61,7 @@ class Lqa_basic():
             self.forward(t, step, mom, g)
 
         self.opt_time = time.time() - time0
-        self.config = torch.sign(self.weights)
+        self.config = torch.sign(self.weights.detach())
         self.energy = float(self.energy_ising(self.config))
 
         print('min energy ' + str(self.energy))

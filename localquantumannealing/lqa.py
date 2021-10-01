@@ -12,7 +12,7 @@ class Lqa(nn.Module):
     def __init__(self, couplings):
         super(Lqa, self).__init__()
 
-        self.couplings = torch.tensor(couplings,dtype=torch.float32)
+        self.couplings = couplings
         self.n = couplings.shape[0]
         self.energy = 0.
         self.config = torch.zeros([self.n, 1])
@@ -57,7 +57,7 @@ class Lqa(nn.Module):
             optimizer.step()
 
         self.opt_time = time.time() - time0
-        self.config = torch.sign(self.weights)
+        self.config = torch.sign(self.weights.detach())
         self.energy = float(self.energy_ising(self.config))
 
         return self.energy
