@@ -5,6 +5,7 @@ This package performs energy minimisation of Ising Hamiltonians as described in 
 "Quadratic Unconstrained Binary Optimisation via Quantum-Inspired Annealing" 
 
 To cite this code please use the DOI
+
 [![DOI](https://zenodo.org/badge/416816780.svg)](https://zenodo.org/badge/latestdoi/416816780)
 
 Dependencies
