@@ -4,6 +4,9 @@ Local quantum annealing for Ising optimisation problems
 This package performs energy minimisation of Ising Hamiltonians as described in arXiv:2108.08064: 
 "Quadratic Unconstrained Binary Optimisation via Quantum-Inspired Annealing" 
 
+To cite this code please use the DOI
+[![DOI](https://zenodo.org/badge/416816780.svg)](https://zenodo.org/badge/latestdoi/416816780)
+
 Dependencies
 ===
 
