@@ -36,7 +36,7 @@ create random 1000 x 1000 symmetric coupling matrix
 couplings = torch.rand([1000,1000])
 couplings = couplings+couplings.T
 couplings = 2*couplings-1
-couplings.fill_diagonal(0.)
+couplings.fill_diagonal_(0.)
 ```
 
 create a lqa instance
