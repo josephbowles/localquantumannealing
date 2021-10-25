@@ -76,6 +76,7 @@ autograd functions. It is thus less memory intensive and suitable for larger pro
 Here, one should specify the momentum when calling minimise. e.g. 
 
 ```
+machine = lqa.Lqa_basic(couplings)
 machine.minimise(step=2, N=1000, g=1, f=0.1, mom=0.99)
 ```
 where mom corresponds to the parameter \mu in the article.  
