@@ -6,7 +6,7 @@ This package performs energy minimisation of Ising Hamiltonians as described in 
 
 To cite this code please use the DOI
 
-[![DOI](https://zenodo.org/badge/416816780.svg)](https://zenodo.org/badge/latestdoi/416816780)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5567120.svg)](https://doi.org/10.5281/zenodo.5567120)
 
 Dependencies
 ===
