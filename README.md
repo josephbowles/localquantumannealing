@@ -17,7 +17,7 @@ Install
 ===
 via pip:
 
-pip install git+https://gitlab.com/josephbowles/localquantumannealing.git
+pip install git+https://github.com/josephbowles/localquantumannealing.git
 
 usage
 ===
